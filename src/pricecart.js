@@ -24,17 +24,15 @@ const useStyles = makeStyles({
 export default function Cart() {
   const classes = useStyles();
   const [count, setCount] = React.useState(0);
-
-  const handleChange = (e) => {
-    var id = e.target.id;
-
-    if (document.getElementById(`${id}`).innerText == 'Add to cart') {
+const handleChange = (e) => {
+    
+    if (e.target.textContent === 'Add to cart') {
       setCount(count + 1);
-      document.getElementById(`${id}`).innerText = 'Remove from cart'
+      e.target.textContent = 'Remove from cart'
     }
-    else {
+    else if (e.target.textContent ==='Remove from cart'){
       setCount(count - 1);
-      document.getElementById(`${id}`).innerText = 'Add to cart';
+      e.target.textContent = 'Add to cart';
     }
   }
 
