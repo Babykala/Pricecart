@@ -62,7 +62,7 @@ export default function Cart() {
           </FormControl>
         </MenuItem>
 
-        <div style={{ marginLeft: '600px', padding: '5px', width: '120px', alignContent: 'center' }}><button type="button" class="btn btn-outline-dark" onClick={}>
+        <div style={{ marginLeft: '600px', padding: '5px', width: '120px', alignContent: 'center' }}><button type="button" class="btn btn-outline-dark">
           <ShoppingCartIcon />Cart <Badge pill bg="dark">{count}</Badge></button></div>
 
 
